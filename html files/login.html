@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<!-- Authentication Section -->>
-      <section id="auth">
-        <h2>User Authentication</h2>
-        <div id="auth-forms">
-          <!-- Login Form -->
-          <form id="login-form">
-            <h3>Login</h3>
-            <label for="login-email">Email:</label>
-            <input type="email" id="login-email" required />
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" required />
-            <button type="submit">Login</button>
-            <p id="login-error" style="color: red"></p>
-          </form>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - TutorConnect</title>
+    <link rel="stylesheet" href="../css files/login.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">TutorConnect</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login">
+      <div class="container">
+        <h2>Welcome Back</h2>
+        <p>Log in to access your dashboard.</p>
+        <form id="login-form" class="login-form">
+          <label for="login-email">Email Address:</label>
+          <input
+            type="email"
+            id="login-email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="login-password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" class="cta-btn">Log In</button>
+          <p id="login-error" class="error-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 TutorConnect. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript files/login.js"></script>
+  </body>
 </html>

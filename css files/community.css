@@ -1,0 +1,131 @@
+/* Navigation Bar */
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2582ec;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-left: 30px;
+  color: #2582ec;
+}
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}/* Community Section */
+
+.community {
+    padding: 3em 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+.community h2 {
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+.community p {
+    margin-bottom: 2em;
+    color: #555;
+}
+.post-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.post-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.post-form input[type="file"] {
+    margin: 0.5em 0;
+}
+.posts-container {
+    margin-top: 2em;
+}
+.post {
+    background: white;
+    margin: 1em auto;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+.post .post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.post-actions button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1em;
+}
+.post-actions button:hover {
+    text-decoration: underline;
+}
+.comment-section {
+    margin-top: 1em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+.comment-section textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.comment-section button {
+    margin-top: 0.5em;
+    background: #007bff;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-section button:hover {
+    background: #0056b3;
+}
+
+footer {
+  text-align: center;
+}
+/* no comment for this project becaus it is a simple project 
+and it will be deleted after short time*/

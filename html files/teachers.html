@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard - TutorConnect</title>
+    <link rel="stylesheet" href="../css files/teachers.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">TutorConnect</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#" id="logout">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+      <div class="container">
+        <h2>Welcome, Teacher</h2>
+        <p>Manage your profile here.</p>
+
+        <!-- Profile Form -->
+        <form id="profile-form" class="profile-form">
+          <label for="teacher-name">Full Name:</label>
+          <input
+            type="text"
+            id="teacher-name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="teacher-email">Email Address:</label>
+          <input
+            type="email"
+            id="teacher-email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="teacher-subject">Subject You Teach:</label>
+          <input
+            type="text"
+            id="teacher-subject"
+            placeholder="Enter the subject you teach"
+            required
+          />
+
+          <label for="teacher-experience">Experience (in years):</label>
+          <input
+            type="number"
+            id="teacher-experience"
+            placeholder="Enter your experience in years"
+            required
+          />
+
+          <label for="teacher-bio">Biography:</label>
+          <textarea
+            id="teacher-bio"
+            placeholder="Write a short biography"
+            required
+          ></textarea>
+
+          <label for="teacher-picture">Profile Picture:</label>
+          <input type="file" id="teacher-picture" accept="image/*" />
+
+          <button type="submit" class="cta-btn">Save Profile</button>
+        </form>
+
+        <!-- Display Profile -->
+        <div id="profile-display" class="profile-display hidden">
+          <h3>Your Profile</h3>
+          <img
+            id="display-picture"
+            src="#"
+            alt="Profile Picture"
+            class="hidden"
+          />
+          <p><strong>Name:</strong> <span id="display-name"></span></p>
+          <p><strong>Email:</strong> <span id="display-email"></span></p>
+          <p><strong>Subject:</strong> <span id="display-subject"></span></p>
+          <p>
+            <strong>Experience:</strong>
+            <span id="display-experience"></span> years
+          </p>
+          <p><strong>Biography:</strong> <span id="display-bio"></span></p>
+          <button id="edit-profile" class="edit-btn">Edit Profile</button>
+          <button id="delete-profile" class="delete-btn">Delete Profile</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 TutorConnect. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript files/teachers.js"></script>
+  </body>
+</html>

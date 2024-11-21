@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard - TutorConnect</title>
+    <link rel="stylesheet" href="../css files/student.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">TutorConnect</a>
+          <ul class="nav-links">
+            <li><a href="community.html">Community</a></li>
+            <li><a href="index.html" id="logout">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+      <div class="container">
+        <h2>Welcome to the Student Dashboard</h2>
+        <p>Find the best tutors and book a session with them.</p>
+
+        <!-- Search Bar -->
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search by name or subject..."
+        />
+
+        <!-- Teacher Profiles -->
+        <div id="teacher-profiles" class="teacher-profiles">
+          <!-- Teachers will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking hidden">
+      <div class="container">
+        <h2>Book a Meeting</h2>
+        <p>Schedule a session with <span id="selected-teacher-name"></span>.</p>
+        <form id="booking-form">
+          <label for="meeting-date">Choose a Date:</label>
+          <input type="date" id="meeting-date" required />
+
+          <label for="meeting-time">Choose a Time:</label>
+          <input type="time" id="meeting-time" required />
+
+          <button type="submit" class="cta-btn">Book Meeting</button>
+          <button type="button" id="cancel-booking" class="delete-btn">
+            Cancel
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 TutorConnect. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../javascript files/student.js"></script>
+  </body>
+</html>

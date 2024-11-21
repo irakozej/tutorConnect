@@ -1,135 +1,157 @@
-/* style.css */
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
   color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
-header {
-  background: #333;
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(to right, #57bbe6, #137ef0);
   color: #fff;
   padding: 1em 0;
-  text-align: center;
 }
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+.navbar .container {
   display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-section {
-  padding: 2em;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 1em 0;
-  background: #333;
-  color: #fff;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-/* Search Bar */
-#search {
-  display: block;
-  margin: 0 auto 1em;
-  padding: 0.5em;
-  width: 80%;
-  font-size: 1em;
-}
-
-/* Booking Form */
-#booking-form {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 1em;
-  margin-top: 2em;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
-#booking-form input,
-#booking-form select,
-#booking-form button {
-  padding: 0.5em;
-  font-size: 1em;
-  width: 80%;
-  max-width: 400px;
-}
-
-#booking-confirmation {
-  margin-top: 1em;
-  color: green;
+.navbar .logo {
+  font-size: 1.5em;
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
-/* Authentication Section */
-#auth {
-  margin-top: 2em;
-  text-align: center;
-}
-
-#auth-forms {
+.navbar .nav-links {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1em;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 300px;
-  background-color: #fff;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.navbar .nav-links a:hover {
+  text-decoration: underline;
 }
 
-form input {
-  padding: 0.5em;
-  width: 100%;
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  background: linear-gradient(to right, #025fc4, #97dcfa);
+  color: white;
+  gap: 2em; /* Add space between text and image */
 }
-
-form button {
-  padding: 0.5em;
-  background-color: #007bff;
+.hero-content {
+  max-width: 60%;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.hero .cta-btn {
+  padding: 0.5em 1.5em;
+  background: #ff6600;
   color: white;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.hero .cta-btn:hover {
+  background: #ff3300;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  flex: 1; /* Allow the image to grow */
+  width: 100%; /* Set a larger width */
+}
+
+/* Features Section */
+.features {
+  background: #f4f4f4;
+  padding: 2em 0;
+}
+.features h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 0 2em;
+}
+.feature {
+  background: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   cursor: pointer;
 }
 
-form button:hover {
-  background-color: #0056b3;
-}
-/* Dashboard visibility */
-#student-dashboard,
-#teacher-dashboard {
-  padding: 2em;
-  background: #f9f9f9;
+/* Hover Effects */
+.feature:hover {
+  background: #459cf8; /* Change background color */
+  color: white; /* Change text color */
+  transform: scale(1.05); /* Slightly enlarge the box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow */
 }
 
-/* Hide and show sections */
-.hidden {
-  display: none;
+.feature h3 {
+  color: #007bff;
+  margin-bottom: 0.5em;
+}
+.feature:hover h3 {
+  color: white; /* Change heading color on hover */
+}
+
+/* Footer */
+footer {
+  background: #121e35;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+  padding-bottom: 0.5em;
+}
+footer p {
+  margin-bottom: 1em;
+}
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+}
+footer .social-links a:hover {
+  text-decoration: underline;
 }

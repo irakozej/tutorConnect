@@ -1,0 +1,98 @@
+/* Navigation Bar */
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 80px;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2582ec;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding-left: 30px;
+  color: #2582ec;
+}
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* General Form Styling */
+.signup {
+  padding: 3em 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+.signup h2 {
+  margin-bottom: 0.5em;
+  color: #007bff;
+}
+.signup p {
+  margin-bottom: 2em;
+  font-size: 1.1em;
+  color: #555;
+}
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.signup-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333;
+}
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+.signup-form button {
+  width: 100%;
+  padding: 0.8em;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.signup-form button:hover {
+  background: #0056b3;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -0.5em;
+}
+footer {
+  text-align: center;
+}
