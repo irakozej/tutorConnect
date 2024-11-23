@@ -1,35 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
   const signupForm = document.getElementById("signup-form");
+  const passwordInput = document.getElementById("signup-password");
+  const confirmPasswordInput = document.getElementById(
+    "signup-confirm-password"
+  );
+  const signupMessage = document.getElementById("signup-message");
 
-  // Helper function to save users to localStorage
-  const getUsers = () => JSON.parse(localStorage.getItem("users")) || [];
-  const saveUsers = (users) =>
-    localStorage.setItem("users", JSON.stringify(users));
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  if (signupForm) {
-    signupForm.addEventListener("submit", (e) => {
-      e.preventDefault();
+    const password = passwordInput.value.trim();
+    const confirmPassword = confirmPasswordInput.value.trim();
 
-      const name = document.getElementById("signup-name").value.trim();
-      const email = document.getElementById("signup-email").value.trim();
-      const password = document.getElementById("signup-password").value.trim();
-      const role = document.getElementById("signup-role").value;
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      signupMessage.textContent = "Please enter the same password.";
+      signupMessage.className = "message error";
+      return;
+    }
 
-      const users = getUsers();
+    // Simulate a successful signup process
+    signupMessage.textContent = "Signup successful!";
+    signupMessage.className = "message success";
 
-      // Check if email already exists
-      if (users.some((user) => user.email === email)) {
-        document.getElementById("signup-error").textContent =
-          "Email is already registered!";
-        return;
-      }
-
-      // Save user data
-      users.push({ name, email, password, role });
-      saveUsers(users);
-
-      alert("Signup successful! Please log in.");
-      window.location.href = "login.html";
-    });
+    // Optionally, redirect to another page
+    setTimeout(() => {
+      window.location.href = "login.html"; // Redirect to login page
+    }, 2000);
+  });
+});
+document.getElementById("signup-role").addEventListener("change", (e) => {
+  const teacherFields = document.getElementById("teacher-fields");
+  if (e.target.value === "teacher") {
+    teacherFields.classList.remove("hidden");
+  } else {
+    teacherFields.classList.add("hidden");
   }
 });
+

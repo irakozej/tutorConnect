@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const selectedTeacherName = document.getElementById("selected-teacher-name");
   const bookingForm = document.getElementById("booking-form");
   const cancelBooking = document.getElementById("cancel-booking");
-
+  
   // Sample teacher data
   const teachers = [
     {
@@ -30,7 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
       picture: "../Images/down.jfif",
     },
   ];
-
+  // Fetch teacher profiles from the backend
+  const fetchTeachers = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/api/teacher/all");
+      if (!response.ok) {
+        throw new Error("Failed to fetch teacher profiles");
+      }
+      teachers = await response.json();
+      renderTeachers();
+    } catch (error) {
+      console.error(error);
+      alert("Error fetching teacher profiles.");
+    }
+  };
   // Render teacher profiles
   const renderTeachers = (filter = "") => {
     teacherProfiles.innerHTML = "";

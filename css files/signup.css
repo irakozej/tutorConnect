@@ -88,11 +88,19 @@
 .signup-form button:hover {
   background: #0056b3;
 }
-.error-message {
-  color: red;
+/* Success and Error Messages */
+.message {
+  margin-top: 1em;
   font-size: 0.9em;
-  margin-top: -0.5em;
+  font-weight: bold;
 }
+.message.success {
+  color: green;
+}
+.message.error {
+  color: red;
+}
+
 footer {
   text-align: center;
 }

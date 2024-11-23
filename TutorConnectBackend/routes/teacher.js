@@ -57,5 +57,15 @@ router.delete("/profile", auth, async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 });
+// Fetch all teachers
+router.get("/all", async (req, res) => {
+  try {
+    const teachers = await Teacher.find().populate("userId", "name email");
+    res.status(200).json(teachers);
+  } catch (error) {
+    console.error("Error fetching teachers:", error);
+    res.status(500).json({ error: "Internal server error." });
+  }
+});
 
 module.exports = router;
