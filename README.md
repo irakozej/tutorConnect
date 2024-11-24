@@ -160,6 +160,8 @@ Create a new branch for your feature/bug fix.
 Submit a pull request explaining your changes.
 
 ## Contact
-Author: Your Name
-Email: your-email@example.com
+Author: Jean Paul IRAKOZE
+
+Email: jeaniakoze68@gmail.com
+
 Project Repository: TutorConnect
