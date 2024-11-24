@@ -50,13 +50,13 @@ Find tutors by name or subject.
 
 ## Screenshots
 
-**Landing Page
+**Landing Page**
 
-Student Dashboard
+**Student Dashboard**
 
-Teacher Dashboard
+**Teacher Dashboard**
 
-Community Page**
+**Community Page**
 
 ## Technologies Used
 ### Frontend
