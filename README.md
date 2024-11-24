@@ -10,26 +10,26 @@
 Search for tutors by subject or name.
 View detailed tutor profiles, including their experience, subjects taught, and biography.
 Book and cancel sessions with tutors.
-For Teachers:
+2. **For Teachers:**
 
 Create and manage a professional profile.
 Showcase teaching expertise, upload a profile picture, and share a biography.
 Receive session bookings and interact with students.
-For Communities:
+3. **For Communities:**
 
 Engage in a forum to share ideas, give feedback, and ask questions.
 Post content with optional attachments (images/documents).
 Like, comment, and interact with posts.
-Features
-🔒 User Authentication:
+## Features
+🔒 **User Authentication**:
 
 Secure signup and login functionality.
 Role-based redirection (students and teachers).
-👩‍🏫 Teacher Profiles:
+**👩‍🏫 Teacher Profiles:**
 
 Create profiles with detailed information (subject, experience, bio).
 Automatically list on the student dashboard for discovery.
-📚 Student Dashboard:
+**📚 Student Dashboard:**
 
 Search for tutors and book sessions.
 Cancel or manage booked sessions.
