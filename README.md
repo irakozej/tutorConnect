@@ -1,11 +1,11 @@
-# TutorConnect
+# **TutorConnect**
 
-Connecting Students and Teachers Globally 🌎
-What It Is
-TutorConnect is a web-based platform designed to bridge the gap between students and teachers. It provides a seamless experience for students to find the best tutors based on their needs and for teachers to showcase their expertise and manage bookings.
+### Connecting Students and Teachers Globally 🌎
+## **What It Is**
+**TutorConnect** is a web-based platform designed to bridge the gap between students and teachers. It provides a seamless experience for students to find the best tutors based on their needs and for teachers to showcase their expertise and manage bookings.
 
-What It’s About
-For Students:
+## What It’s About
+1. **For Students:**
 
 Search for tutors by subject or name.
 View detailed tutor profiles, including their experience, subjects taught, and biography.
